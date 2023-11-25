@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квиз о ресторане Туран</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        ol li {
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Квиз о ресторане Туран</h1>
+
+    <div class="container">
+        <form id="quizForm">
+            <div class="container">
+                <form id="quizForm">
+                    <ol>
+                        <li>
+                            <h3>Вопрос 1: Когда был основан ресторан "Туран"?</h3>
+                            <input type="radio" name="q1" value="a"> a) 2010<br>
+                            <input type="radio" name="q1" value="b"> b) 2015<br>
+                            <input type="radio" name="q1" value="c"> c) 2020<br>
+                        </li>
+                        <li>
+                            <h3>Вопрос 2: Какое блюдо является фирменным в ресторане "Туран"?</h3>
+                            <input type="radio" name="q2" value="a"> a) Пицца<br>
+                            <input type="radio" name="q2" value="b"> b) Суши<br>
+                            <input type="radio" name="q2" value="c"> c) Лагман<br>
+                        </li>
+                        <li>
+                            <h3>Вопрос 3: Сколько столов можно забронировать максимально в ресторане "Туран"?</h3>
+                            <input type="radio" name="q3" value="a"> a) 10<br>
+                            <input type="radio" name="q3" value="b"> b) 20<br>
+                            <input type="radio" name="q3" value="c"> c) 30<br>
+                        </li>
+                        <!-- Продолжайте добавлять вопросы по аналогии -->
+                        <li>
+                            <h3>Вопрос 4: Какая кухня преобладает в меню "Туран"?</h3>
+                            <input type="radio" name="q4" value="a"> a) Итальянская<br>
+                            <input type="radio" name="q4" value="b"> b) Японская<br>
+                            <input type="radio" name="q4" value="c"> c) Казахская<br>
+                        </li>
+                        <li>
+                            <h3>Вопрос 5: Сколько времени работает ресторан "Туран" в день?</h3>
+                            <input type="radio" name="q5" value="a"> a) 8 часов<br>
+                            <input type="radio" name="q5" value="b"> b) 12 часов<br>
+                            <input type="radio" name="q5" value="c"> c) 24 часа<br>
+                        </li>
+                        <li>
+                            <h3>Вопрос 6: Какая вместимость ресторана "Туран"?</h3>
+                            <input type="radio" name="q6" value="a"> a) 50 человек<br>
+                            <input type="radio" name="q6" value="b"> b) 100 человек<br>
+                            <input type="radio" name="q6" value="c"> c) 150 человек<br>
+                        </li>
+                        <li>
+                            <h3>Вопрос 7: Какие мероприятия проводятся в ресторане "Туран"?</h3>
+                            <input type="radio" name="q7" value="a"> a) Дегустации<br>
+                            <input type="radio" name="q7" value="b"> b) Кулинарные мастер-классы<br>
+                            <input type="radio" name="q7" value="c"> c) Все вышеперечисленное<br>
+                        </li>
+                        <li>
+                            <h3>Вопрос 8: Сколько залов имеет ресторан "Туран"?</h3>
+                            <input type="radio" name="q8" value="a"> a) 1<br>
+                            <input type="radio" name="q8" value="b"> b) 2<br>
+                            <input type="radio" name="q8" value="c"> c) 3<br>
+                        </li>
+                        <li>
+                            <h3>Вопрос 9: Какие виды кухни представлены в меню ресторана "Туран"?</h3>
+                            <input type="radio" name="q9" value="a"> a) Европейская, Азиатская<br>
+                            <input type="radio" name="q9" value="b"> b) Африканская, Южноамериканская<br>
+                            <input type="radio" name="q9" value="c"> c) Австралийская, Антарктическая<br>
+                        </li>
+                        <li>
+                            <h3>Вопрос 10: Какие напитки предлагаются в ресторане "Туран"?</h3>
+                            <input type="radio" name="q10" value="a"> a) Вода<br>
+                            <input type="radio" name="q10" value="b"> b) Коктейли<br>
+                            <input type="radio" name="q10" value="c"> c) Кофе и чай<br>
+                        </li>
+                    </ol>
+                    
+                    
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        
+            <script>
+                document.getElementById('quizForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Предотвращаем отправку формы
+                    // Получение ответов и их обработка
+                    
+                    // ... (обработка ответов на вопросы)
+                });
+        
+                // Обработка результатов и предоставление скидки
+                document.getElementById('quizForm').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    // Получение ответов и их обработка
+                    
+                    // Пример: Проверка правильных ответов и предоставление скидки
+                    const correctAnswers = ['a', 'b', 'c', 'a', 'b', 'c', 'a', 'b', 'c', 'a']; // Правильные ответы
+                    let score = 0;
+                    for (let i = 0; i < correctAnswers.length; i++) {
+                        if (answers[i] === correctAnswers[i]) {
+                            score++;
+                        }
+                    }
+        
+                    // Предоставление скидки в зависимости от результатов
+                    if (score >= 7) {
+                        alert("Поздравляем! Вы прошли квиз и получаете 50% скидку на следующий заказ!");
+                    } else if (score >= 5) {
+                        alert("Вы прошли квиз, и мы предоставляем вам 25% скидку на следующий заказ!");
+                    } else {
+                        alert("Спасибо за участие! На следующий раз будет больше возможностей получить скидку!");
+                    }
+                });
+            </script>
+            <script>
+                document.getElementById('quizForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Предотвращаем отправку формы
+                    
+                    // Получаем ответы пользователя
+                    const userAnswers = {
+                        q1: document.querySelector('input[name="q1"]:checked').value,
+                        q2: document.querySelector('input[name="q2"]:checked').value,
+                        q3: document.querySelector('input[name="q3"]:checked').value,
+                        q4: document.querySelector('input[name="q4"]:checked').value,
+                        q5: document.querySelector('input[name="q5"]:checked').value,
+                        q6: document.querySelector('input[name="q6"]:checked').value,
+                        q7: document.querySelector('input[name="q7"]:checked').value,
+                        q8: document.querySelector('input[name="q8"]:checked').value,
+                        q9: document.querySelector('input[name="q9"]:checked').value,
+                        q10: document.querySelector('input[name="q10"]:checked').value
+                    };
+            
+                    // Подсчет правильных ответов
+                    const correctAnswers = ['a', 'b', 'c', 'a', 'b', 'c', 'a', 'b', 'c', 'a']; // Правильные ответы
+                    let score = 0;
+                    for (let i = 0; i < correctAnswers.length; i++) {
+                        if (userAnswers[`q${i + 1}`] === correctAnswers[i]) {
+                            score++;
+                        }
+                    }
+            
+                    // Предоставление скидки в зависимости от результатов
+                    let discountMessage = '';
+                    if (score >= 7) {
+                        discountMessage = "50% скидку на следующий заказ!";
+                    } else if (score >= 5) {
+                        discountMessage = "25% скидку на следующий заказ!";
+                    } else {
+                        discountMessage = "Увы, на этот раз скидка не предоставляется.";
+                    }
+            
+                    // Вывод результата
+                    const resultMessage = `Вы ответили правильно на ${score} вопросов из 10. ${discountMessage}`;
+                    alert(resultMessage);
+                });
+                
+            </script>
+             <script>
+                // ... (предыдущий скрипт квиза)
+        
+                // Добавляем обработчик для кнопки возврата на главную страницу
+                const backButton = document.createElement('button');
+                backButton.textContent = 'Вернуться на главную страницу';
+                backButton.addEventListener('click', function() {
+                    window.location.href = 'index.html'; // Перенаправляем на главную страницу
+                });
+                
+                // Добавляем кнопку на страницу после завершения квиза
+                document.getElementById('quizForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Предотвращаем отправку формы
+                    
+                    // ... (код для подсчета результатов и вывода скидки)
+        
+                    // Выводим сообщение с результатом и кнопкой для возврата на главную страницу
+                    const resultMessage = `Вы ответили правильно на ${score} вопросов из 10. ${discountMessage}`;
+                    alert(resultMessage);
+                    
+                    // Создаем блок для кнопки возврата на главную
+                    const buttonDiv = document.createElement('div');
+                    buttonDiv.appendChild(backButton);
+                    
+                    // Добавляем кнопку на страницу
+                    document.body.appendChild(buttonDiv);
+                });
+            </script>
+        </body>
+        </html>

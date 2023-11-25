@@ -1,0 +1,247 @@
+/* styles.css */
+
+/* Стили для заголовков */
+h1 {
+    color: rgb(10, 94, 45);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Стили для параграфов */
+p {
+    color: rgb(0, 0, 0) ;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Стили для навигационного меню */
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #666;
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.btn-anim {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-anim:hover {
+    transform: scale(1.1);
+}
+
+.menu-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: slideDown 0.5s ease-in-out;
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+/* Стили для слайдера */
+.carousel-item img {
+    width: 100%;
+    height: 500px; /* Регулируй высоту слайдера по своему усмотрению */
+    object-fit: cover;
+}
+.restaurant-info {
+    margin-top: 50px;
+}
+
+ .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        animation: slideDown 0.5s ease-in-out;
+    }
+    @keyframes slideDown {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    /* Стили для слайдера */
+    .carousel-item img {
+        width: 100%;
+        height: 500px; /* Регулируй высоту слайдера по своему усмотрению */
+        object-fit: cover;
+    }
+    .restaurant-info {
+        margin-top: 50px;
+    }
+    .btn-anim {
+        transform: scale(1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .btn-anim:hover {
+        transform: scale(1.1);
+    }
+
+    .menu-item {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .menu-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .category-icon {
+        font-size: 24px;
+        margin-right: 8px;
+    }
+
+    .menu-price {
+        font-weight: bold;
+    }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        animation: slideDown 0.5s ease-in-out;
+    }
+    @keyframes slideDown {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    /* Стили для слайдера */
+    .carousel-item img {
+        width: 100%;
+        height: 500px; /* Регулируй высоту слайдера по своему усмотрению */
+        object-fit: cover;
+    }
+    .restaurant-info {
+        margin-top: 50px;
+    } /* Изменение шрифта для различных категорий */
+    h1 {
+        font-family: 'Times New Roman', Times, serif; /* Шрифт для заголовков */
+        margin-top: 40px;
+        text-align: center;
+    }
+    h2 {
+        font-family: 'Arial Black', sans-serif; /* Шрифт для категорий меню */
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    /* Стили для меню-категорий */
+    .menu-category {
+        margin-bottom: 4px;
+    }
+    .menu-category .row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .menu-item {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .menu-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .menu-item h4 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    .menu-item p {
+        margin-bottom: 0;
+    }
+    .category-icon {
+        font-size: 24px;
+        margin-right: 8px;
+    }
+    .menu-price {
+        font-weight: bold;
+    }.menu-item {
+        position: relative;
+        max-width: 200%; /* Максимальная ширина контейнера */
+        max-height: 500px; /* Максимальная высота контейнера */
+        overflow: hidden;
+    }
+    
+    .menu-item img {
+        width: 100%; /* Растягивание изображения на всю ширину родительского контейнера */
+        height: 100%; /* Растягивание изображения на всю высоту родительского контейнера */
+        object-fit: cover; /* Масштабирование изображения */
+        object-position: center; /* Позиционирование изображения по центру */
+    }
+    body {
+        background-image: url("qqq.jpg");
+        background-size: cover;
+        background-position: center;
+        /* Дополнительные стили для фона, если нужно */
+    }
+    video {
+        width: 100%;
+        max-width: 892px; /* Максимальная ширина видео */
+        height: auto; /* Автоматическая высота в соответствии с соотношением сторон */
+    }
+    

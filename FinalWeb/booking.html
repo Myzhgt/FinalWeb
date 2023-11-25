@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование столика - Ресторан Туран</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="unnamed.jpg" type="">
+    
+</head>
+<style>
+    .invalid-feedback {
+        color: #003c71; /* Цвет текста */
+    }
+</style>
+<body>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Ресторан Туран</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Меню</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Контакты</a>
+                </li>
+              
+            </ul>
+        </div>
+    </nav>
+
+
+    <<div class="container mt-5">
+        <h2>Забронировать столик</h2>
+        <form id="reservationForm" novalidate>
+            <div class="form-group">
+                <label for="fullName">ФИО</label>
+                <div>
+                    <input type="text" class="form-control" id="fullName" placeholder="Введите ваше ФИО" required>
+                    <div class="invalid-feedback">Пожалуйста, введите ваше ФИО.</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <div>
+                    <input type="email" class="form-control" id="email" placeholder="Введите ваш email" required>
+                    <div class="invalid-feedback">Пожалуйста, введите корректный email.</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Номер телефона</label>
+                <div>
+                    <input type="tel" class="form-control" id="phone" placeholder="Введите ваш номер телефона" required>
+                    <div class="invalid-feedback">Пожалуйста, введите ваш номер телефона.</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="date">Дата бронирования</label>
+                <div>
+                    <input type="date" class="form-control" id="date" required>
+                    <div class="invalid-feedback">Пожалуйста, выберите дату бронирования.</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="time">Время бронирования</label>
+                <div>
+                    <input type="time" class="form-control" id="time" required>
+                    <div class="invalid-feedback">Пожалуйста, выберите время бронирования.</div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Забронировать</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Валидация формы
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var form = document.getElementById('reservationForm');
+                form.addEventListener('submit', function(event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            }, false);
+        })();
+    </script>
+</body>
+</html>

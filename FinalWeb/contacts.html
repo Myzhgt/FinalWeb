@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан Туран - Контакты</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="unnamed.jpg" type="">
+    <style>
+        /* Дополнительные стили */
+        .contact-container {
+            max-width: 600px;
+            margin: 33 auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Ресторан Туран</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Меню</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>Контакты</h2>
+        <p>Свяжитесь с нами, чтобы сделать заказ или задать вопросы:</p>
+        <ul>
+            <li>Телефон: +77760214428</li>
+            <li>Email: info@restaurant-turan.com</li>
+            <li>Адрес: ул. Примерная, 123, Город</li>
+        </ul>
+        <!-- Кнопка для вызова модального окна -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+            Отправить сообщение
+        </button>
+    
+        <!-- Информация о рабочих часах -->
+        <div class="working-hours mt-4">
+            <h2>Рабочие часы</h2>
+            <p>Понедельник - Воскресенье: 10:00 - 22:00</p>
+        </div>
+    
+        <!-- Информация о доставке или бронировании -->
+        <div class="delivery-booking-info mt-4">
+            <h2>Информация о доставке или бронировании</h2>
+            <p>Для заказа доставки звоните по телефону или оставьте заявку на сайте.</p>
+            <p>Для бронирования столика также звоните по указанному номеру.</p>
+        </div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Отправить сообщение</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Форма обратной связи -->
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Имя</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        
+        function clearForm() {
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            clearForm();
+            $('#contactModal').modal('hide');
+        });
+    </script>
+</body>
+</html>

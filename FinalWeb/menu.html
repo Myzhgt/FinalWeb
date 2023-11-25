@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан Туран - Меню</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="unnamed.jpg" type="">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Ресторан Туран</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Меню</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="menu-category">
+            <h2 class="accordion-toggle" data-toggle="collapse" data-target="#salads">Салаты</h2>
+            <div id="salads" class="collapse">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/d8c534475c7d3c0ac69f7e54a819de2c.jpg" alt="Салат Цезарь">
+                            <h4>Салат "Цезарь" <span class="menu-price">$4.99</span></h4>
+                            <p>Свежий салат из листов салата, гренок, курицы, пармезана и соуса Цезарь.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/afd3a989831a2ed75494224e71881d29.jpg" alt="Салат Восток">
+                            <h4>Салат "Восток" <span class="menu-price">$5.99</span></h4>
+                            <p>Перец светофор, красная фасоль, черри, микс салата, филе куриное, сыр моцарелла, бальзамический крем.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/31dd51b91a2445d8ef693a9a1e6d9982.jpg" alt="Салат Ачик-чучук">
+                            <h4>Салат "Ачик-чучук" <span class="menu-price">$3.99</span></h4>
+                            <p>Помидор, полугорький перец, зелень.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                         </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2 class="accordion-toggle" data-toggle="collapse" data-target="#shashlik">Шашлыки</h2>
+            <div id="shashlik" class="collapse">
+                <div class="row">
+                    <!-- Пример блюд для категории "Шашлыки" -->
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/shashlyk-iz-baranej-spinki.jpg" alt="Баранина шашлык">
+                            <h4>Баранина шашлык <span class="menu-price">$15.99</span></h4>
+                            <p>Нежная баранина, маринованная и приготовленная на углях.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/lyulya-kebab-iz-govyadiny.jpg" alt="Люля кебаб">
+                            <h4>Люля кебаб<span class="menu-price">$11.99</span></h4>
+                            <p>Люля кебаб мелко нарезанного мяса и приготовленная на углях</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/1685397175_gagaru-club-p-kavkazskii-shashlik-krasivo-1.jpg" alt="Кавказский">
+                            <h4>Кавказский <span class="menu-price">$12.99</span></h4>
+                            <p>Сочные, ароматные кусочки мяса, которые обычно находят популярность на гриль-вечеринках и семейных посиделках.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/shashlychnik-na-vyezd-7qtQJCKC.jpg" alt="Бараньи ребра">
+                            <h4>Бараньи ребра <span class="menu-price">$17.99</span></h4>
+                            <p>Это мясо обладает насыщенным вкусом и может быть достаточно жирным.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/23c218555bc642cd4c0650e20407123d.jpeg" alt="Шашлык из семги">
+                            <h4>Шашлык из семги <span class="menu-price">$11.99</span></h4>
+                            <p>Обладает нежным вкусом и мягкой текстурой, что делает его хорошим выбором для шашлыка.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/ovoshhi-gril-v-duhovke-18.jpg" alt="Овощной шашлык">
+                            <h4>Овощной шашлык <span class="menu-price">$12.99</span></h4>
+                            <p>Это отличная альтернатива мясному шашлыку, которая подходит как для вегетарианцев, так и для любителей овощей.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2 class="accordion-toggle" data-toggle="collapse" data-target="#drinks">Напитки</h2>
+            <div id="drinks" class="collapse">
+                <div class="row">
+                    <!-- Пример блюд для категории "Напитки" -->
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/3097483.jpg" alt="Pepsi">
+                            <h4>Pepsi<span class="menu-price">$0.99</span></h4>
+                            <p>Газированный напиток Pepsi</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/Coca-Cola.jpg" alt="Coca Cola">
+                            <h4>Кола <span class="menu-price">$0.99</span></h4>
+                            <p>Газированный напиток Кола.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/537140-fanta-35.jpg" alt="Fanta">
+                            <h4>Фанта <span class="menu-price">$0.99</span></h4>
+                            <p>Газированный напиток Фанта.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/1648173798_60-kartinkin-net-p-kartinki-sprait-63.jpg" alt="Спрайт">
+                            <h4>Спрайт <span class="menu-price">$0.99</span></h4>
+                            <p>Газированный напиток Спрайт.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/4b98f19d2d94e64673d0eef2ecb7a1b6.jpeg" alt="Лимонад">
+                            <h4>Лимонад <span class="menu-price">$0.99</span></h4>
+                            <p>Газированный напиток Лимонад.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="drinks/1666171267_10-mykaleidoscope-ru-p-sara-mokhito-vkontakte-10.jpg" alt="Мохито">
+                            <h4>Мохито<span class="menu-price">$0.99</span></h4>
+                            <p>Газированный напиток Мохито.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category">
+            <h2 class="accordion-toggle" data-toggle="collapse" data-target="#eastern-cuisine">Восточная кухня</h2>
+            <div id="eastern-cuisine" class="collapse">
+                <div class="row">
+                    <!-- Пример блюд для категории "Восточная кухня" -->
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/khumus-zakuska-chesnok-zelen.jpg" alt="Хумус">
+                            <h4>Хумус <span class="menu-price">$3.99</span></h4>
+                            <p>Блюдо из пюре из нута, тахини и оливкового масла.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/6ac0e12a48670cb140cbe8cbc8270dde.jpg" alt="Куырдак из баранины">
+                            <h4>Куырдак из баранины <span class="menu-price">$4.99</span></h4>
+                            <p>Баранина, картошка, лук, красный перец.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/72733070469024b3e1fe735f72f5072d.jpg" alt="Хoншау Чайзи">
+                            <h4>Хoншау Чайзи <span class="menu-price">$6.99</span></h4>
+                            <p>Баклажан, древесные грибы, перец полугорький.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/bf4ada03762e5cf70000d33f17d3abad.jpg" alt="Казан-кебаб из курицы">
+                            <h4>Казан-кебаб из курицы <span class="menu-price">$4.99</span></h4>
+                            <p>Куриное филе, лук.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/0c22c2ef676aea6abaf0e921c1f97a82.jpg" alt="Казан-кебаб из говядины">
+                            <h4>Казан-кебаб из говядины <span class="menu-price">$2.99</span></h4>
+                            <p>Говядина, лук.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/2f9b6846b9ed445a2e7f66678681e380.jpg" alt="Лазджи лагман">
+                            <h4>Лазджи лагман <span class="menu-price">$9.99</span></h4>
+                            <p>Куриное филе, полугорький перец.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-category">
+            <h2 class="accordion-toggle" data-toggle="collapse" data-target="#european-cuisine">Европейская кухня</h2>
+            <div id="european-cuisine" class="collapse">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/7673bd6a01d455f8acbbf1ea44fa9dec.jpg" alt="Steak">
+                            <h4>Стейк <span class="menu-price">$20.99</span></h4>
+                            <p>Отборное мясо гриль с картошкой по-деревенски и овощами.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/b9f7fbf033805ccc624f697e2ca0f4b3.jpg" alt="Steak fish">
+                            <h4>Стейк из Семги  <span class="menu-price">$13.99</span></h4>
+                            <p>Лимон, сливки, икра.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/3fd47ab941245f8e4b298580011f0be6.jpg" alt="Assorty">
+                            <h4>Ассорти из колбасок <span class="menu-price">$16.99</span></h4>
+                            <p>Говядина, курица, конина, корнишоны, квашенная капуста.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-category">
+            <h2 class="accordion-toggle" data-toggle="collapse" data-target="#baked-goods">Выпечка</h2>
+            <div id="baked-goods" class="collapse">
+                <div class="row">
+                    <!-- Пример блюд для категории "Выпечка" -->
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/Croissant_Chocolate_Plate_Two_547531_3840x2400.jpg" alt="Круассаны">
+                            <h4>Круассаны <span class="menu-price">$3.99</span></h4>
+                            <p>Хрустящие круассаны с различными начинками: шоколад, творог, ветчина и сыр.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/813c1324be686834cd0f50e6ca082cb1.jpg" alt="Бауырсаки">
+                            <h4>Бауырсаки<span class="menu-price">$2.99</span></h4>
+                            <p>Бауырсаки.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/2f9b6846b9ed445a2e7f66678681e380.jpg" alt="Лепешка">
+                            <h4>Лепешка<span class="menu-price">$6.99</span></h4>
+                            <p>Лепешка.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/5dd1be9d473b5da1c0292cf7d67938e4.jpg" alt="Хачапури по-мегрельски">
+                            <h4>Хачапури по-мегрельски <span class="menu-price">$9.99</span></h4>
+                            <p>Сулугуни, брынза, яйцо, сливочное масло.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/445c71e681c352fecac4e4f01c4e56ff.jpg" alt="Самбуса">
+                            <h4>Самбуса<span class="menu-price">$8.99</span></h4>
+                            <p>Фарш говяжий, рис отварной, перец полугорький, морковь, лук, специи.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menu-item">
+                            <img src="menu/c2c500ac68831a6736a196aaccf9a064.jpg" alt="Самса с мясом">
+                            <h4>Самса с мясом<span class="menu-price">$3.99</span></h4>
+                            <p></p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="orderModalLabel">Заказать еду</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="orderForm">
+                                <div class="form-group">
+                                    <label for="food">Выберите блюдо</label>
+                                    <select class="form-control" id="food" required>
+                                        <option value="" disabled selected>Выберите блюдо</option>
+                                        <option value="Шашлык">Шашлык</option>
+                                        <option value="Салат">Салат</option>
+                                        <option value="Напиток">Напиток</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="quantity">Количество</label>
+                                    <input type="number" class="form-control" id="quantity" min="1" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="deliveryAddress">Адрес доставки</label>
+                                    <input type="text" class="form-control" id="deliveryAddress" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Заказать</button>
+                            </form>
+                        </div>
+                              
+    </div>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</body>
+</html>

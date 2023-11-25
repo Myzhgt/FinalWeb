@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан Туран</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="unnamed.jpg" type="">
+    <style>
+        /* Добавим некоторые стили для анимации */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Ресторан Туран</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <img src="обой.png" class="d-block w-100" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="pexels-photo-5865071.jpeg" class="d-block w-100" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="menu/2c39a53b588b3cb054fd3dd92f672301.jpg" class="d-block w-100" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="menu/Croissant_Chocolate_Plate_Two_547531_3840x2400.jpg" class="d-block w-100" alt="Image 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="drinks/lyulya-kebab-iz-govyadiny.jpg" class="d-block w-100" alt="Image 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="drinks/1666171267_10-mykaleidoscope-ru-p-sara-mokhito-vkontakte-10.jpg" class="d-block w-100" alt="Image 6">
+                </div>
+                <div class="carousel-item">
+                    <img src="menu/5dd1be9d473b5da1c0292cf7d67938e4.jpg" class="d-block w-100" alt="Image 7">
+                </div>
+                
+            </div>
+    
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    
+        <button onclick="scrollToTop()" id="scrollBtn" title="Наверх">&#8593;</button>
+
+    
+    <div class="container restaurant-info">
+        <h2>Добро пожаловать в ресторан "Туран"</h2>
+        <p>Ресторан "Туран" предлагает уникальное сочетание восточной и западной кухни. Мы рады предложить вам богатый выбор блюд, приготовленных из свежих и качественных продуктов. Наслаждайтесь вкусом и атмосферой!</p>
+        <div class="discount-info">
+            <p><strong>Специальное предложение:</strong> Получите 50% скидку на все блюда до конца ноября!</p>
+        </div>
+        <a href="menu.html" class="btn btn-primary mr-2 btn-anim">Посмотреть меню <i class="fas fa-utensils"></i></a>
+        <a href="booking.html" class="btn btn-success btn-anim">Забронировать столик <i class="far fa-calendar-alt"></i></a>
+        <!-- Добавленная ссылка с Font Awesome иконкой -->
+        <a href="quiz.html" class="btn btn-primary mr-2 btn-anim">Пройти квиз <i class="fas fa-question-circle"></i></a>
+    </div>
+    <div class="container mt-4">
+        <h2>Наше видео</h2>
+        <video controls autoplay width="100%">
+            <source src="f-0vUQEAAAA.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Код для открытия квиза при нажатии на кнопку
+        document.getElementById('quizButton').addEventListener('click', function() {
+            document.getElementById('quizContainer').classList.remove('hidden');
+        });
+
+        // JavaScript для обработки отправки квиза
+        document.getElementById('quizForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Получение ответов и их обработка
+            // Добавьте код для обработки ответов здесь
+        });
+    </script>
+    <script>
+        // Функция для прокрутки страницы вверх
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Добавление плавности прокрутки
+            });
+        }
+
+        // Показывать кнопку "Наверх" при прокрутке вниз
+        window.addEventListener('scroll', function() {
+            var scrollButton = document.getElementById('scrollBtn');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollButton.style.display = 'block';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        });
+    </script>
+    <body>
+        <div class="container">
+            <form class="rounded-form" action="">
+                <!-- Ваша форма здесь -->
+                <input type="text" placeholder="Имя">
+                <input type="email" placeholder="Email">
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </body>
+    <style>
+        
+    </style>
+</body>
+
+</html>
